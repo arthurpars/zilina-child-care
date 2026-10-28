@@ -18,9 +18,9 @@ export default function App() {
         <ErrorBoundary>
           <Hero />
           <Welcome />
+          <Gallery />
           <Programs />
           <Day />
-          <Gallery />
           <ApplyForm />
           <Contact />
         </ErrorBoundary>

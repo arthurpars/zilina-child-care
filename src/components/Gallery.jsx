@@ -5,13 +5,12 @@ const imageModules = import.meta.glob('../assets/gallery/*.{jpg,jpeg,png,webp,av
 const images = Object.values(imageModules).map(m => m.default)
 
 function useVisibleCount() {
-  const [count, setCount] = useState(3)
+  const [count, setCount] = useState(2)
   useEffect(() => {
     function update() {
       const w = window.innerWidth
-      if (w < 640) setCount(1)
-      else if (w < 1024) setCount(2)
-      else setCount(3)
+      if (w < 1024) setCount(1)
+      else setCount(2)
     }
     update()
     window.addEventListener('resize', update)
@@ -102,7 +101,7 @@ export default function Gallery() {
                   <div
                     key={src}
                     className="flex-none rounded-card overflow-hidden bg-pale-blue"
-                    style={{ width: itemWidthCalc, aspectRatio: '4/3' }}
+                    style={{ width: itemWidthCalc, aspectRatio: '3/2' }}
                   >
                     <img
                       src={src}

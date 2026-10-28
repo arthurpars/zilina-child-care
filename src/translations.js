@@ -48,7 +48,7 @@ const translations = {
       },
       card2: {
         title: 'Preschool',
-        ages: 'Ages 2–5',
+        ages: 'Ages 3–5',
         desc: 'Age-appropriate early learning through language, basic math, creative activities, music, movement, and educational games that help prepare children for school.',
       },
       card3: {
@@ -63,11 +63,17 @@ const translations = {
       heading: 'A day with us',
       sub: 'A balanced day of learning, play, creativity, outdoor time, and rest.',
       steps: [
-        { time: '7:30 AM', label: 'Arrival & free play' },
-        { time: '9:00 AM', label: 'Circle time & learning' },
-        { time: '11:00 AM–12:00 PM', label: 'Outdoor play time' },
-        { time: '12:00 PM', label: 'Sleep time' },
-        { time: '3:00–5:30 PM', label: 'Creative activities & pick-up' },
+        { time: '7:30 AM',           label: 'Arrival & free play' },
+        { time: '8:30 AM',           label: 'Breakfast' },
+        { time: '9:00 AM',           label: 'Circle time & learning' },
+        { time: '10:00 AM',          label: 'Morning snack' },
+        { time: '10:30–11:00 AM',    label: 'Learning time' },
+        { time: '11:00 AM–12:00 PM', label: 'Outdoor play' },
+        { time: '12:00 PM',          label: 'Lunch' },
+        { time: '12:30 PM',          label: 'Sleep time' },
+        { time: '4:00 PM',           label: 'Dinner' },
+        { time: '4:30 PM',           label: 'Afternoon snack' },
+        { time: '4:45–5:30 PM',      label: 'Creative activities & pick-up' },
       ],
     },
 
@@ -173,7 +179,7 @@ const translations = {
       },
       card2: {
         title: 'Подготовка к школе',
-        ages: 'С 2 до 5 лет',
+        ages: 'С 3 до 5 лет',
         desc: 'Раннее обучение через язык, математику, творческие занятия, музыку, движение и развивающие игры, которые готовят детей к школе.',
       },
       card3: {
@@ -188,11 +194,17 @@ const translations = {
       heading: 'Наш день',
       sub: 'Сбалансированный день учёбы, игр, творчества, прогулок и отдыха.',
       steps: [
-        { time: '7:30 AM', label: 'Приход и свободная игра' },
-        { time: '9:00 AM', label: 'Утренний круг и занятия' },
-        { time: '11:00 AM–12:00 PM', label: 'Прогулка' },
-        { time: '12:00 PM', label: 'Тихий час' },
-        { time: '3:00–5:30 PM', label: 'Творческие занятия и уход домой' },
+        { time: '7:30 AM',           label: 'Приход и свободная игра' },
+        { time: '8:30 AM',           label: 'Завтрак' },
+        { time: '9:00 AM',           label: 'Утренний круг и занятия' },
+        { time: '10:00 AM',          label: 'Утренний перекус' },
+        { time: '10:30–11:00 AM',    label: 'Учебное время' },
+        { time: '11:00 AM–12:00 PM', label: 'Прогулка на свежем воздухе' },
+        { time: '12:00 PM',          label: 'Обед' },
+        { time: '12:30 PM',          label: 'Тихий час' },
+        { time: '4:00 PM',           label: 'Ужин' },
+        { time: '4:30 PM',           label: 'Полдник' },
+        { time: '4:45–5:30 PM',      label: 'Творческие занятия и уход домой' },
       ],
     },
 

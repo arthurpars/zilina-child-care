@@ -11,7 +11,7 @@ export default function Day() {
           <h2 id="day-heading" className="m-0 font-extrabold text-3xl md:text-[2.375rem] leading-[1.15]">{d.heading}</h2>
           <p className="m-0">{d.sub}</p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
           {d.steps.map((step, i) => (
             <div key={step.time} className="flex flex-col gap-2">
               <div className="w-11 h-11 rounded-full bg-navy text-white flex items-center justify-center font-extrabold text-xl">
