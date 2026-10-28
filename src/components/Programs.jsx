@@ -44,10 +44,10 @@ export default function Programs() {
   const p = t.programs
 
   return (
-    <section id="programs" className="bg-pale-blue">
-      <div className="max-w-content mx-auto px-6 py-[88px] flex flex-col gap-9">
+    <section id="programs" aria-labelledby="programs-heading" className="bg-pale-blue">
+      <div className="max-w-content mx-auto px-6 py-12 sm:py-16 md:py-[88px] flex flex-col gap-9">
         <div className="flex flex-col gap-2.5 max-w-[620px]">
-          <h2 className="m-0 font-extrabold text-[38px] leading-[1.15]">{p.heading}</h2>
+          <h2 id="programs-heading" className="m-0 font-extrabold text-3xl md:text-[2.375rem] leading-[1.15]">{p.heading}</h2>
           <p className="m-0">{p.sub}</p>
         </div>
         <div className="flex flex-wrap gap-6">

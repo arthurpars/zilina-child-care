@@ -13,6 +13,9 @@ const translations = {
       contact: 'Contact',
       apply: 'Apply',
       langLabel: 'Language: English',
+      ariaLabel: 'Main navigation',
+      openMenu: 'Open menu',
+      closeMenu: 'Close menu',
     },
 
     // Hero
@@ -27,42 +30,44 @@ const translations = {
     // Welcome / About
     about: {
       heading: 'Welcome to Zilina',
-      p1: 'We are a small, friendly child care and preschool where every child is known by name and every day has room for play.',
-      p2: '[Add two or three sentences about your story, your team and how you work with children.]',
+      p1: 'Zilina is a warm and welcoming child care and preschool where every child is known, cared for, and encouraged to learn, play, and grow.',
+      p2: 'We provide a safe, family-like environment with age-appropriate learning, creative activities, outdoor play, and plenty of individual attention. Our multilingual environment includes English, Armenian, and Russian.',
       link: 'Come and see us',
+      photoAlt: 'Teachers and children at Zilina',
+      errorFallback: 'Something went wrong. Please refresh the page.',
     },
 
     // Programs
     programs: {
       heading: 'Our programs',
-      sub: 'Care and learning for each age, at a pace that suits your child.',
+      sub: 'Care and learning for every stage, with activities that help children learn, grow, and enjoy each day.',
       card1: {
         title: 'Child care',
-        ages: '[AGES]',
-        desc: '[Short description of your child care: daily care, meals, naps and play.]',
+        ages: 'Ages 1+',
+        desc: 'A safe and caring environment where children enjoy daily play, learning activities, outdoor time, rest, and individual attention.',
       },
       card2: {
         title: 'Preschool',
-        ages: '[AGES]',
-        desc: '[Short description of your preschool: early learning, language, numbers and getting ready for school.]',
+        ages: 'Ages 2–5',
+        desc: 'Age-appropriate early learning through language, basic math, creative activities, music, movement, and educational games that help prepare children for school.',
       },
       card3: {
-        title: '[Extra program]',
-        ages: '[AGES]',
-        desc: '[Optional third program, such as a summer club or after-school group. Remove this card if you do not need it.]',
+        title: 'Enrichment Activities',
+        ages: 'For enrolled children',
+        desc: 'Children enjoy drawing, music, singing and dancing, chess, educational games, and outdoor activities that make learning fun and engaging.',
       },
     },
 
     // A day with us
     day: {
       heading: 'A day with us',
-      sub: 'A steady rhythm helps children feel at home.',
+      sub: 'A balanced day of learning, play, creativity, outdoor time, and rest.',
       steps: [
-        { time: '[TIME]', label: 'Arrival and free play' },
-        { time: '[TIME]', label: 'Circle time and learning' },
-        { time: '[TIME]', label: 'Outdoor play' },
-        { time: '[TIME]', label: 'Lunch and rest' },
-        { time: '[TIME]', label: 'Crafts, stories and pick-up' },
+        { time: '7:30 AM', label: 'Arrival & free play' },
+        { time: '9:00 AM', label: 'Circle time & learning' },
+        { time: '11:00 AM–12:00 PM', label: 'Outdoor play time' },
+        { time: '12:00 PM', label: 'Sleep time' },
+        { time: '3:00–5:30 PM', label: 'Creative activities & pick-up' },
       ],
     },
 
@@ -87,6 +92,7 @@ const translations = {
         message: 'Message',
       },
       submit: 'Send application',
+      tryAgain: 'Try again',
       submitting: 'Sending…',
       success: 'Thank you! We have received your application and will write back soon.',
       error: 'Something went wrong. Please try again or email us at info@zilinachildcare.com.',
@@ -105,7 +111,7 @@ const translations = {
       phoneLabel: 'Phone',
       emailLabel: 'Email',
       hoursLabel: 'Opening hours',
-      hours: '[DAYS AND HOURS]',
+      hours: 'Mon–Fri, 7:30 AM – 5:30 PM',
       mapTitle: 'Map showing Zilina Child Care & Preschool at 6051 Colfax Ave, North Hollywood',
     },
 
@@ -132,6 +138,9 @@ const translations = {
       contact: 'Контакты',
       apply: 'Заявка',
       langLabel: 'Язык: русский',
+      ariaLabel: 'Главное меню',
+      openMenu: 'Открыть меню',
+      closeMenu: 'Закрыть меню',
     },
 
     // Hero
@@ -146,42 +155,44 @@ const translations = {
     // Welcome / About
     about: {
       heading: 'Добро пожаловать в Zilina',
-      p1: 'Мы небольшой и дружный детский сад, где каждого ребёнка знают по имени, а в каждом дне есть время для игры.',
-      p2: '[Добавьте два-три предложения о вашей истории, команде и о том, как вы работаете с детьми.]',
+      p1: 'Zilina — тёплый и дружелюбный детский сад, где каждого ребёнка знают, любят и помогают ему учиться, играть и расти.',
+      p2: 'Мы создаём безопасную семейную атмосферу с занятиями по возрасту, творческими активностями, прогулками и индивидуальным подходом. Наш сад многоязычный: мы говорим по-английски, по-армянски и по-русски.',
       link: 'Приходите в гости',
+      photoAlt: 'Воспитатели и дети в Zilina',
+      errorFallback: 'Что-то пошло не так. Пожалуйста, обновите страницу.',
     },
 
     // Programs
     programs: {
       heading: 'Наши программы',
-      sub: 'Забота и обучение для каждого возраста, в темпе, удобном вашему ребёнку.',
+      sub: 'Забота и обучение для каждого возраста — занятия, которые помогают детям учиться, расти и радоваться каждому дню.',
       card1: {
         title: 'Присмотр и уход',
-        ages: '[ВОЗРАСТ]',
-        desc: '[Краткое описание: ежедневный уход, питание, сон и игры.]',
+        ages: 'С 1 года',
+        desc: 'Безопасная и заботливая среда, где дети играют, занимаются, гуляют, отдыхают и получают индивидуальное внимание.',
       },
       card2: {
         title: 'Подготовка к школе',
-        ages: '[ВОЗРАСТ]',
-        desc: '[Краткое описание: раннее развитие, речь, счёт и подготовка к школе.]',
+        ages: 'С 2 до 5 лет',
+        desc: 'Раннее обучение через язык, математику, творческие занятия, музыку, движение и развивающие игры, которые готовят детей к школе.',
       },
       card3: {
-        title: '[Дополнительная программа]',
-        ages: '[ВОЗРАСТ]',
-        desc: '[Необязательная третья программа, например летний клуб. Удалите эту карточку, если она не нужна.]',
+        title: 'Развивающие занятия',
+        ages: 'Для записавшихся детей',
+        desc: 'Дети рисуют, занимаются музыкой, поют и танцуют, играют в шахматы, участвуют в развивающих играх и прогулках на свежем воздухе.',
       },
     },
 
     // A day with us
     day: {
       heading: 'Наш день',
-      sub: 'Привычный распорядок помогает детям чувствовать себя как дома.',
+      sub: 'Сбалансированный день учёбы, игр, творчества, прогулок и отдыха.',
       steps: [
-        { time: '[ВРЕМЯ]', label: 'Приход и свободная игра' },
-        { time: '[ВРЕМЯ]', label: 'Утренний круг и занятия' },
-        { time: '[ВРЕМЯ]', label: 'Прогулка' },
-        { time: '[ВРЕМЯ]', label: 'Обед и отдых' },
-        { time: '[ВРЕМЯ]', label: 'Творчество, сказки и дорога домой' },
+        { time: '7:30 AM', label: 'Приход и свободная игра' },
+        { time: '9:00 AM', label: 'Утренний круг и занятия' },
+        { time: '11:00 AM–12:00 PM', label: 'Прогулка' },
+        { time: '12:00 PM', label: 'Тихий час' },
+        { time: '3:00–5:30 PM', label: 'Творческие занятия и уход домой' },
       ],
     },
 
@@ -206,6 +217,7 @@ const translations = {
         message: 'Сообщение',
       },
       submit: 'Отправить заявку',
+      tryAgain: 'Попробовать снова',
       submitting: 'Отправляем…',
       success: 'Спасибо! Мы получили вашу заявку и скоро вам напишем.',
       error: 'Не удалось отправить. Попробуйте ещё раз или напишите нам на info@zilinachildcare.com.',
@@ -224,7 +236,7 @@ const translations = {
       phoneLabel: 'Телефон',
       emailLabel: 'Электронная почта',
       hoursLabel: 'Часы работы',
-      hours: '[ДНИ И ЧАСЫ]',
+      hours: 'Пн–Пт, 7:30 – 17:30',
       mapTitle: 'Карта: Zilina Child Care & Preschool, 6051 Colfax Ave, North Hollywood',
     },
 

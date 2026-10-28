@@ -30,7 +30,7 @@ export function LanguageProvider({ children }) {
     if (ogTitle) ogTitle.setAttribute('content', t.siteName)
     const ogDesc = document.querySelector('meta[property="og:description"]')
     if (ogDesc) ogDesc.setAttribute('content', t.metaDescription)
-  }, [lang, t])
+  }, [lang])
 
   return (
     <LanguageContext.Provider value={{ lang, setLang, t }}>
@@ -40,5 +40,7 @@ export function LanguageProvider({ children }) {
 }
 
 export function useLanguage() {
-  return useContext(LanguageContext)
+  const ctx = useContext(LanguageContext)
+  if (!ctx) throw new Error('useLanguage must be used inside <LanguageProvider>')
+  return ctx
 }

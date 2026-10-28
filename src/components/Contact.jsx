@@ -43,10 +43,10 @@ export default function Contact() {
   const c = t.contact
 
   return (
-    <section id="contact" className="bg-pale-blue">
-      <div className="max-w-content mx-auto px-6 py-[88px] flex flex-wrap gap-12">
+    <section id="contact" aria-labelledby="contact-heading" className="bg-pale-blue">
+      <div className="max-w-content mx-auto px-6 py-12 sm:py-16 md:py-[88px] flex flex-wrap gap-8 md:gap-12">
         <div className="flex-1 basis-[320px] flex flex-col gap-[22px]">
-          <h2 className="m-0 font-extrabold text-[38px] leading-[1.15]">{c.heading}</h2>
+          <h2 id="contact-heading" className="m-0 font-extrabold text-3xl md:text-[2.375rem] leading-[1.15]">{c.heading}</h2>
 
           <div className="flex gap-3.5 items-start">
             <LocationIcon />
@@ -81,15 +81,16 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="flex-1 basis-[380px] min-h-[320px] rounded-panel overflow-hidden bg-white">
+        <div className="flex-1 basis-[380px] h-[320px] md:h-[420px] rounded-panel overflow-hidden bg-white">
           <iframe
             title={c.mapTitle}
             src={MAP_SRC}
             width="100%"
             height="100%"
-            style={{ minHeight: '320px', border: 0, display: 'block' }}
+            style={{ border: 0, display: 'block' }}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"
           />
         </div>
       </div>

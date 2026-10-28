@@ -1,4 +1,5 @@
 import { LanguageProvider } from './useLanguage'
+import ErrorBoundary from './components/ErrorBoundary'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Welcome from './components/Welcome'
@@ -13,14 +14,16 @@ export default function App() {
   return (
     <LanguageProvider>
       <Navbar />
-      <main>
-        <Hero />
-        <Welcome />
-        <Programs />
-        <Day />
-        <Gallery />
-        <ApplyForm />
-        <Contact />
+      <main id="main-content">
+        <ErrorBoundary>
+          <Hero />
+          <Welcome />
+          <Programs />
+          <Day />
+          <Gallery />
+          <ApplyForm />
+          <Contact />
+        </ErrorBoundary>
       </main>
       <Footer />
     </LanguageProvider>
